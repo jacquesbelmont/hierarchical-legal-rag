@@ -49,3 +49,18 @@ Thumbs.db
 
 # Weaviate local data (if running outside Docker)
 weaviate_data/
+
+# Uploaded PDFs (never commit user documents)
+uploads/
+*.pdf
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Alembic offline SQL scripts generated locally
+infra/migrations/versions/*.sql
+
+# Pytest / coverage artifacts
+.coverage.*
+coverage.xml
+report.xml
